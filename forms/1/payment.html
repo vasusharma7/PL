@@ -9,7 +9,7 @@
 
 }
 body{
-  background: url(det.jpg);
+  background: url(pay.jpg);
   background-size: cover;
   margin: 0;
   padding: 0px;
@@ -29,7 +29,8 @@ form{
 }
 .form h1{
   font-size: 40px;
-  border-bottom: 5px solid #e87e3b;
+  color:rgb(0,0,0,0.8);
+  border-bottom: 5px solid #435229;
   margin-bottom:30px;
 
 }
@@ -40,8 +41,7 @@ form{
   width:100%;
   padding: 5px 0;
   margin: 10px 0;
-  border: 1px solid #583120;
-  border-radius :50px;
+  border-bottom: 1.5px solid #0e3091;
   overflow: hidden;
 }
 .textbox input{
@@ -55,18 +55,21 @@ form{
   font-size:15px;
   margin:0 10px;
 }
+.date{
+  font-size: 14px;
 
+}
 .textbox:focus-within{
 
     transform: scale(1.3);
     color:black
 
   }
-
 .btn{
 width: 100%;
 color:black;
-border: 2px solid #e87e3b;
+border: 2px solid #425128;
+border-radius : 50px;
 background: none;
 font-size: 25px;
 padding:5px;
@@ -78,126 +81,26 @@ margin:20px 0;
   </head>
   <body>
     <div class="form">
-      <h1>Traveller Info </h1>
+      <h1>PAY AND FLY</h1>
 
-    <form action="payment.html">
+    <form action="http://www.makemytrip.com" >
 
     <div class="textbox">
-      <input type="text" name="Name" placeholder="NAME">
+      <input type="text" name="card" placeholder="16 DIGIT CARD NUMBER">
     </div>
 
     <div class="textbox">
-    <input type="number" name="CONTACT" placeholder="CONTACT NO.">
+    <input type="text" name="NAME" placeholder="NAME ON CARD">
   </div>
   <div class="textbox">
-    <input type="email" name="EMAIL" placeholder="EMAIL">
+    <input type="password" name="CV2" placeholder="CVC/CV2 NUMBER">
+  </div>
+  <div class="textbox date">
+    EXPIRY DATE
+    <input type="date" name="EXP" placeholder="EXPIRY DATE">
   </div>
   <div class="textbox">
-    <input type="number" name="age" placeholder="AGE">
-  </div>
-
-    <input class = "btn" type="submit" name="submit" value="PAY">
-    </form>
-
-    </div>
-  </body>
-</html>
-<!DOCTYPE html >
-<html lang="en" dir="ltr" >
-  <head>
-    <meta charset="utf-8">
-    <title>111803127</title>
-<style>
-*{
-  font-family: sans-serif;
-
-}
-body{
-  background: url(det.jpg);
-  background-size: cover;
-  margin: 0;
-  padding: 0px;
-  overflow: hidden;
-}
-
-.form{
-  position:absolute;
-  top:40%;
-  left:20%;
-  transform: translate(-50%,-50%);
-  color: black;
-
-}
-form{
-  width:300px;
-}
-.form h1{
-  font-size: 40px;
-  border-bottom: 5px solid #e87e3b;
-  margin-bottom:30px;
-
-}
-.textbox{
-  float: left;
-  display: block;
-  font-size: 20px;
-  width:100%;
-  padding: 5px 0;
-  margin: 10px 0;
-  border: 1px solid #583120;
-  border-radius :50px;
-  overflow: hidden;
-}
-.textbox input{
-
-  border:none;
-  outline: none;
-  background: none;
-  color: black;
-  width:80%;
-  float: left;
-  font-size:15px;
-  margin:0 10px;
-}
-
-.textbox:focus-within{
-
-    transform: scale(1.3);
-    color:black
-
-  }
-
-.btn{
-width: 100%;
-color:black;
-border: 2px solid #e87e3b;
-background: none;
-font-size: 25px;
-padding:5px;
-cursor: pointer;
-margin:20px 0;
-}
-</style>
-
-  </head>
-  <body>
-    <div class="form">
-      <h1>Traveller Info </h1>
-
-    <form action="payment.html">
-
-    <div class="textbox">
-      <input type="text" name="Name" placeholder="NAME">
-    </div>
-
-    <div class="textbox">
-    <input type="number" name="CONTACT" placeholder="CONTACT NO.">
-  </div>
-  <div class="textbox">
-    <input type="email" name="EMAIL" placeholder="EMAIL">
-  </div>
-  <div class="textbox">
-    <input type="number" name="age" placeholder="AGE">
+    <input type="password" name="PIN" placeholder="4 DIGIT PIN">
   </div>
 
     <input class = "btn" type="submit" name="submit" value="PAY">
