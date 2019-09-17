@@ -1,0 +1,117 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    <title>111803127</title>
+<style>
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(pay.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.form{
+  position:absolute;
+  top:40%;
+  left:20%;
+  transform: translate(-50%,-50%);
+  color: black;
+
+}
+::placeholder{
+  color: black;
+}
+form{
+  width:300px;
+  color: black;
+}
+.form h1{
+  font-size: 40px;
+  color:rgb(0,0,0,0.8);
+  border-bottom: 5px solid #435229;
+  margin-bottom:30px;
+
+}
+.textbox{
+  color: black;
+  float: left;
+  display: block;
+  font-size: 20px;
+  width:100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  border-bottom: 1.5px solid #0e3091;
+  overflow: hidden;
+}
+.textbox input{
+
+  border:none;
+  outline: none;
+  background:rgba(255,255,255,0.5);
+  color: black;
+  width:80%;
+  float: left;
+  font-size:15px;
+  margin:0 10px;
+}
+.date{
+  font-size: 14px;
+
+}
+.textbox:focus-within{
+
+    transform: scale(1.3);
+    color:black;
+
+  }
+.btn{
+width: 100%;
+color:black;
+border: 2px solid #425128;
+border-radius : 50px;
+background: none;
+font-size: 25px;
+padding:5px;
+cursor: pointer;
+margin:20px 0;
+}
+</style>
+
+  </head>
+  <body>
+    <div class="form">
+      <h1>PAY AND FLY</h1>
+
+    <form action="http://www.makemytrip.com" method="post">
+
+    <div class="textbox">
+      <input type="text" name="card" placeholder="16 DIGIT CARD NUMBER" minlength = "16" maxlength="16">
+    </div>
+
+    <div class="textbox">
+    <input type="text" name="NAME" placeholder="NAME ON CARD" required>
+  </div>
+  <div class="textbox">
+    <input type="password" name="CV2" placeholder="CVC/CV2 NUMBER" maxlength="3" minlength="3" required>
+  </div>
+  <div class="textbox date">
+    EXPIRY DATE
+    <input type="month" name="EXP" placeholder="EXPIRY DATE" required>
+  </div>
+  <div class="textbox">
+    <input type="password" name="PIN" placeholder="4 DIGIT PIN" minlength = "4" maxlength="4"required>
+  </div>
+
+    <input class = "btn" type="submit" name="submit" value="PAY" required>
+
+    </form>
+
+    </div>
+  </body>
+</html>

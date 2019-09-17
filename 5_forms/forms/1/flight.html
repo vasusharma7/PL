@@ -1,0 +1,109 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    <title>111803127</title>
+<style>
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(flight.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.form{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: black;
+
+}
+form{
+  width:300px;
+}
+.form h1{
+  color: #1b3257;
+  font-size: 40px;
+  border-bottom: 5px solid #891b41;
+  margin-bottom:30px;
+
+}
+.textbox{
+  float: left;
+  display: block;
+  font-size: 20px;
+  width:100%;
+  padding: 5px 0;
+  margin: 6px 0;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+.textbox input{
+
+  border:none;
+  outline: none;
+  background: none;
+  color: black;
+  width:80%;
+  float: left;
+  font-size:15px;
+  margin:0 10px;
+}
+
+.textbox:focus-within{
+
+    transform: scale(1.3);
+    color:black
+
+  }
+  .date{
+    font-size: 14px;
+
+  }
+.btn{
+width: 100%;
+color: white;
+border: 2px solid black;
+background: none;
+font-size: 25px;
+padding:5px;
+cursor: pointer;
+margin:20px 0;
+}
+</style>
+
+  </head>
+  <body>
+    <div class="form">
+      <h1>DELTA AIRLINES</h1>
+
+    <form action="details.html">
+
+    <div class="textbox">
+      <input type="text" name="Origin" placeholder="ORIGIN">
+    </div>
+
+    <div class="textbox">
+    <input type="text" name="Destination" placeholder="Destination">
+  </div>
+  <div class="textbox">
+    Departure
+    <input type="date" name="Departure" placeholder="Departure">
+  </div>
+  <div class="textbox">
+    Return
+    <input type="date" name="Return" placeholder="Return">
+  </div>
+
+    <input class = "btn" type="submit" name="submit" value="BOOK">
+    </form>
+
+    </div>
+  </body>
+</html>

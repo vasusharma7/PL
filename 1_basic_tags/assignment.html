@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>
+    USE OF TAGS
+    </title>
+    <style>
+
+            tr,th,td{
+                text-align: center;
+                width:200px;
+                height:20px;
+                padding: 3%;
+                border-bottom: 1px solid white;
+
+            }
+        th{
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        li{
+            padding : 2%;
+        }
+       a{
+            text-decoration: none;
+            color : white;
+            cursor : hand;
+        }
+        button a{
+            cursor: inherit ;
+
+        }
+        p{
+            margin:10%;
+        }
+        #blink{
+            animation: blink 1s linear infinite;
+        }
+        @keyframes blink{
+            0%{
+                color:white;
+            }
+            50%{
+                color: aqua;
+            }
+            100%{
+                color: white;
+            }
+        }
+    </style>
+    </head>
+    <!-- TOP SECTION   --- MAIN -->
+<body style = "padding : 0 ; margin :0; color : white; font-family: sans-serif; background: black; scroll-behavior: smooth;">
+
+    <section><h1 style = "position: absolute; left:45%; top:5%; margin:0;padding:0;font-size: 3em;">BMW M850</h1>
+        <marquee direction = right>Presenting The All New Car in the BMW M Series</marquee>
+    <img src = "demo.jpg" height  = 400px width = 550px usemap = "#basic" alt = "bmw_new car M850"/>
+        <map name="basic">
+    <area shape="circle" coords="419,260,20" href="https://en.wikipedia.org/wiki/Rim_(wheel)" target = "_blank" alt="RIMS">
+    <area shape="circle" coords="120,260,50" href="https://en.wikipedia.org/wiki/Rim_(wheel)" target = "_blank" alt="rim">
+            <area shape="circle" coords="230,200,50" href=" https://en.wikipedia.org/wiki/Windshield_sun_shades " target = "_blank" alt="shield">
+            <area shape="circle" coords="90,230,30" href=" https://en.wikipedia.org/wiki/Hood_(car)" target = "_blank" alt="hood">
+
+    </map>
+        <p style = "position: absolute; top:40%;">Click on different parts of Image to Explore More</p>
+        </section>
+        <section style="position: absolute;left:2%; top:70%; width: 40%;">
+        <ul style = "list-style: square">
+        <li style = "list-style: none;"><b>Some Useful Links</b></li>
+        <li><a href = #info>Information</a> </li>
+            <li><a href = #details>Details</a></li>
+        <li><a href = #about>About US</a></li>
+        </ul>
+
+        </section>
+        <section style = "position : absolute; right:0%; top:10%;">
+    <table>
+        <caption style = "font-size: 2.5em;">Specs</caption>
+            <tr>
+                <th>Features</th>
+                <th>Speciality</th>
+                <th>About</th>
+            </tr>
+
+            <tr>
+                <td>Suspension</td>
+                <td>RTGX Suspension System</td>
+                <td>Unique in Itself</td>
+            </tr>
+            <tr>
+                <td>Dashboard</td>
+                <td>Fully Computerised</td>
+                <td>Voice Recognition and more</td>
+            </tr>
+            <tr>
+                <td>Accelerator</td>
+                <td>Turbo Boost</td>
+                <td>0 to 100 in 2 sec</td>
+            </tr>
+            <tr>
+                <td>Interior</td>
+                <td>Comfort Redefined</td>
+                <td>Extra Legroom and more</td>
+            </tr>
+            <tr >
+                <td rowspan="2">Outer Body</td>
+                <td>Glossy Paint</td>
+                <td>All weather compatible</td>
+            </tr>
+            <tr>
+                <td>Stylish Back Hood</td>
+                <td>Travel in  style</td>
+            </tr>
+        </table>
+            <button type = "button" href =#info id = "btn"  style ="position: absolute; top:100%; left:-20%; width : 40% ; height :40px; border: 1px solid white; border-radius: 5px; background: transparent; color: white;" >
+            <a href = #info>Scroll Down</a></button>
+    </section>
+    <section id = "info" style = "position: absolute; top:120%;background: black;" >
+        <h2 style = "position : absolute ;left : 40%;">Basic Information</h2>
+        <p style = "border: 1px solid white; border-radius: 5px; height: 100px;">
+            It's been nearly two decades since the <q>BMW 8-Series</q> filled driveways with its grandiosity and elegantly oversized persona. The top-dog 850 CSi was a two-ton cruiser motivated by a naturally-aspirated 5.6-liter V12 that churned a then-remarkable 380 horsepower. Wow, how the world of performance cars has evolved. Flash forward to present day, and the new 2019 BMW M850i xDrive offers a future-forward translation of the shark-nosed 2+2 from yesteryear, but little else carries over.
+        </p>
+
+        </section>
+        <section id = "details" style = "position: absolute; top:170%; background: black; width :50%;" >
+        <h2 style = "position : absolute ;left : 40%">Details</h2>
+        <p >
+            <div style = "border: 1px solid white; border-radius: 5px; height: 170px;">
+                <p>
+            <span><b>PRICE :</b></li></span><span>------</span>
+            <span><b>$ 110,000 </b></li></span>
+            <br>
+            <span><b>WARRANTY :  </b></li></span><span>-----</span>
+            <span><b>4 YEARS </b></li></span>
+            <br>
+            <span><b>INSURANCE :  </b></li></span><span>-----</span>
+            <span><b>$ 2500 PER YEAR</b></li></span>
+            <br>
+            <BR>
+                <span id = "blink">CLICK ON THE CENTER OF <b>BMW LOGO</b> TO VISIT OUR WEBSITE</span>
+</p>
+        </div>
+     <img style = "position : absolute; left : 150%; top:30%;" src="bmw.png" width="200px" height="200px" alt="BMW" usemap="#bmw" alt = "bmw_logo">
+
+    <map name="bmw">
+    <area shape="circle" coords="108,108,20" href="http://www.bmwgroup.com" alt="WEB">
+    </map>
+
+        </section>
+
+    <section id = "about" style = "position: absolute;top:230%;background: black;" >
+        <h2 style = "position : absolute ;left : 40%">About BMW</h2>
+        <p style = "border: 1px solid white; border-radius: 5px; height: 120px;">
+            BMW is a German multinational company which produces automobiles and motorcycles. The company was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from 1933 to 1945.
+            BMW is a German multinational company which produces automobiles and motorcycles. The company was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from 1933 to 1945.
+            <br>
+            <br>
+            <p dir = "rtl" style="position: absolute; top:25%;">Visit our Website---
+            <a href = "http://www.bmwgroup.com" target = "_blank" style = "color : aqua;">www.bmwgroup.com</a>
+        </p>
+        </p>
+        </section>
+    </body>
+</html>

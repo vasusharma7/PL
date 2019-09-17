@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    <title>111803127</title>
+<style>
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(back.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.form{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: black;
+
+}
+form{
+  width:300px;
+}
+.form h1{
+  font-size: 40px;
+  color:rgb(0,0,0,0.8);
+  border-bottom: 5px solid white;
+  margin-bottom:30px;
+
+}
+.textbox{
+  float: left;
+  display: block;
+  font-size: 20px;
+  width:100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  border-bottom: 2px solid #0e3091;
+  overflow: hidden;
+}
+.textbox input{
+
+  border:none;
+  outline: none;
+  background: none;
+  color: white;
+  width:80%;
+  float: left;
+  font-size:20px;
+  margin:0 10px;
+}
+.check{
+  font-size: 15px;
+  overflow:visible;
+  display: flex;
+}
+.option{
+  font-size: 15px;
+  display:flex;
+}
+.textbox:focus-within{
+
+    transform: scale(1.3);
+    color:black
+
+  }
+.btn{
+width: 100%;
+color:black;
+border: 2px solid white;
+border-radius : 50px;
+background: none;
+font-size: 25px;
+padding:5px;
+cursor: pointer;
+margin:20px 0;
+}
+</style>
+
+  </head>
+  <body>
+    <div class="form">
+      <h1>MEDICAL RECORDS</h1>
+    <form action = "https://www.fortishealthcare.com" >
+
+      <p>Weather Suffering from Common Diseases ? </p>
+    <div class="textbox check" style=" border-bottom : 0px;">
+
+      <input type="checkbox" name="1" value="Diabeties">Diabeties<br>
+  <input type="checkbox" name="2" value="Acidity">Acidity<br>
+  <input type="checkbox" name="3" value="Weakness">Weakness<br><br>
+
+    </div>
+<div class="textbox check" >
+  <input type="checkbox" name="3" value="Hypertension">Hypertension<br><br>
+  <input type="checkbox" name="3" value="Overweight">Overweight<br><br>
+  <input type="checkbox" name="3" value="Obesity">Obesity<br><br>
+
+</div>
+  <div class="textbox">
+    <input type="text" name="other" placeholder="Other Problems/Issues">
+  </div>
+
+  <div class="textbox option">
+    Consulted Before
+    <input type="radio" name="option" value="YES" checked>Yes<br>
+      <input type="radio" name="option" value="NO"> No<br>
+  </div>
+  <div class="textbox">
+    <input type="text" name="other" placeholder="Places Consulted">
+  </div>
+    <input class = "btn" type="submit" name="submit" value="Book Appointment">
+    </form>
+
+    </div>
+  </body>
+</html>

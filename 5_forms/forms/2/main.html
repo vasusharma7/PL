@@ -1,0 +1,119 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    <title>111803127</title>
+<style>
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(main.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.form{
+  position:absolute;
+  top:30%;
+  left:55%;
+  transform: translate(-50%,-50%);
+  color: black;
+
+}
+form{
+  width:300px;
+}
+.form h1{
+  color: #1b3257;
+  font-size: 60px;
+  border-bottom: 5px solid #891b41;
+  margin-bottom:80px;
+
+}
+.textbox{
+  float: left;
+  display: block;
+  font-size: 20px;
+  width:100%;
+  padding: 5px 0;
+  margin: 6px 0;
+  border: 2px solid black;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.25);
+}
+.textbox input ,select{
+
+  border:none;
+  outline: none;
+  background: none;
+  color: black;
+  width:80%;
+  float: left;
+  font-size:20px;
+  margin:0 10px;
+}
+.textbox:focus-within{
+
+    transform: scale(1.3);
+    color:black
+
+  }
+  .date{
+    font-size: 14px;
+
+  }
+
+.btn{
+width: 60%;
+color: white;
+border: 2px solid black;
+background: none;
+font-size: 25px;
+padding:5px;
+cursor: pointer;
+border-radius: 50px;
+margin:20px 0 0 50px;
+  background-color: rgba(0,0,0,0.25);
+}
+</style>
+
+  </head>
+  <body>
+    <div class="form">
+      <h1>VS HOSPITALS</h1>
+    <form action="details.html">
+    <div class="textbox">
+      <select>
+      <option value="Consultancy Field">Consultancy Field</option>
+      <option value="Cardiologist">Cardiologist</option>
+      <option value="Orthopaedics">Orthopaedics</option>
+        <option value="Opthomalogy">Opthomalogy</option>
+      <option value="Gynaecology">Gynaecology</option>
+        <option value="Dermatology">Dermatology</option>
+          <option value="Paediatrician">Paediatrician</option>
+        </select>
+  </div>
+
+  <div class="textbox">
+
+    <input list="browse" name="browse" placeholder="Location">
+    <datalist id="browse">
+    <option value="Pune">
+    <option value="Bangalore">
+    <option value="Hyderabad">
+    <option value="Mumbai">
+      <option value="Delhi">
+  </datalist>
+  </div>
+
+    <input class = "btn" type="submit" name="submit" value="SEARCH">
+    </form>
+
+    </div>
+  </body>
+</html>

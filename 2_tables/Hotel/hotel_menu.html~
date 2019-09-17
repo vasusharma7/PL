@@ -1,0 +1,24 @@
+<html>
+<head><title>Hotel Menu</title></head>
+<body style = "background : url('image.jpg'); font-family : sans serif; color : orange; background-size : cover;" >
+
+	<div style = "border : 2px solid tomato; font-face: bold; color : #FF4500; text-align : center; width : 100%; z-index :2; height: 10%; postition : absolute; top: 0%; left: 0%; font-size :3rem; font-family : sans serif;">
+	 MY HOTEL
+	</div>
+	<marquee>Looking For Best Deals ? Here only !<marquee>
+	<div  style = "width  :1000vw ; height : 100%; position : absolute; left : 0%; top : -0%; display : flex; background : rgba(255,248,220,0.7); " >
+		<div style = " align : center; position :absolute; top: 30%; left: 4.5%;">
+		<ul style = "list-style : none; align-content : center;">
+		<li style = "padding :0.7rem; color: brown;" ><b>Rooms<b></li>
+			<li style = "padding :0.7rem; color: brown;" ><b>Food <b></li>
+			<li style = "padding :0.7rem; color: brown;" ><strong>Room Service</strong> </li>
+			<li style = "padding :0.7rem; color: brown;" ><u>Specialities</u> </li>
+			<li style = "padding :0.7rem; color: brown;" >  <b>About Us</b></li>
+			<li style = "padding :0.7rem; color: brown;" > <em>Other Hotels <em></li>
+			<li style = "padding :0.7rem; color: brown;" >  <strong> BEST DEALS <strong> </li>
+		</ul>
+		</div>	
+	</div>
+	
+</body>
+</html>
